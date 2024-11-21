@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AboutFragment">
+
+    <!-- Company Logo -->
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/aklogo"
+        android:contentDescription="@string/company_logo_desc"
+        android:scaleType="centerCrop"/>
+
+    <!-- Company Name -->
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/companyLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Clothing Wear"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <!-- Company Description -->
+    <TextView
+        android:id="@+id/companyDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/companyName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="At Clothing Wear, we bring you the latest trends in fashion. Our mission is to provide stylish and affordable clothing for everyone."
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:textAlignment="center"/>
+
+    <!-- Key Information -->
+    <LinearLayout
+        android:id="@+id/keyInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/companyDescription"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/grey">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Founded: 2020"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: Braamfontein"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Vision: To be the global leader in fashion"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Contact Us Button -->
+    <Button
+        android:id="@+id/contactUsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keyInfoContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Contact Us"
+        android:backgroundTint="@color/app"
+        android:textColor="@color/white"/>
+</RelativeLayout>
